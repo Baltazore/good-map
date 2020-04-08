@@ -46,11 +46,11 @@
       this.latitude = null;
       this.longitude = null;
       this.mapOptions = {};
-      this.style.display = 'block';
-      this.style.height = '100%';
     }
 
     connectedCallback() {
+      this.style.display = 'block';
+      this.style.height = '100%';
       loadGoogleMaps(this.apiKey).then(() => {
         if (!this.mapOptions.zoom) {
           this.mapOptions.zoom = this.zoom || 0;
