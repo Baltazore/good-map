@@ -46,6 +46,8 @@
       this.latitude = null;
       this.longitude = null;
       this.mapOptions = {};
+      this.style.display = 'block';
+      this.style.height = '100%';
     }
 
     connectedCallback() {
