@@ -49,6 +49,7 @@
     }
 
     connectedCallback() {
+      this.style.position = 'inherit';
       this.style.display = 'block';
       this.style.height = '100%';
       loadGoogleMaps(this.apiKey).then(() => {
